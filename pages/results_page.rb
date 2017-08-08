@@ -4,8 +4,8 @@ require_relative 'base_page'
 class ResultsPage < BasePage
 
   TABLE_ROWS = {css: "tr"}
-  AREA = "tr:nth-of-type(%d) > td:nth_of_type(1)"
-  GALLONS_OF_PAINT = "tr-nth-of-type(%d) > td-nth_of_type(2)"
+  AREA = "tr:nth-of-type(%d) > td:nth-of-type(1)"
+  GALLONS_OF_PAINT = "tr-nth-of-type(%d) > td-nth-of-type(2)"
 
   def get_area room_number
     locator = {css:AREA % room_number}

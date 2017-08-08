@@ -29,7 +29,7 @@ context 'Paint Calculator' do
 
     dimensions_page = DimensionsPage.new
 
-    it 'correct number of rooms with ridiculous number' do
+    it 'shows correct areas' do
       areas = []
       number_of_rooms.times do |n|
         length = rand(100)
